@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Mounika Keerthi - Portfolio</title>
+    <meta name="description" content="Self-driven engineering student passionate about software development">
+    <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+<!-- Navigation -->
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+    <!-- Logo -->
+    <div class="nav-logo">
+      <a href="#home">Sri Mounika Keerthi</a>
+    </div>
+
+    <!-- Nav Menu -->
+    <div class="nav-menu" id="nav-menu">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="files/Mouni_Resume.pdf" class="nav-link" target="_blank" download>Resume</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="nav-toggle" id="nav-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line-1">Sri Mounika</span>
+                    <span class="title-line-2">Keerthi</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span id="typewriter"></span>
+                </div>
+                
+                <p class="hero-description">
+                    Self-driven and quick-learning engineering student with a passion for software development. 
+                    Strong in time management, collaboration, and currently enhancing skills in full stack technologies.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://github.com/KSriMounika" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sri-mounika-keerthi-72aa84290/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="keerthisrimounika@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919398749761" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+          
+              <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-glow"></div>
+                        <img src="images/mouni.jpg" alt="Sri Mounika Keerthi" class="profile-image">
+                        <div class="floating-badge badge-1">💻 Developer</div>
+                        <div class="floating-badge badge-2">⭐ Problem Solver</div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Hello! I'm Sri Mounika Keerthi, a passionate engineering student specializing in software development. 
+                        My journey began with curiosity about how applications work, leading me to master programming and full-stack development.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        I'm self-driven, quick to learn, and excel in collaboration. Currently enhancing my expertise in full-stack 
+                        technologies while solving complex problems and building innovative solutions.
+                    </p>
+                    
+                    <div class="about-traits">
+                        <span class="trait">Adaptable</span>
+                        <span class="trait">Quick Learner</span>
+                        <span class="trait">Team Player</span>
+                        <span class="trait">Tech Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Constantly evolving technical expertise across multiple domains</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-category="programming">
+                    <div class="category-header">
+                        <div class="category-icon programming-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <div class="category-pattern"></div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="C" data-level="85" data-desc="System programming & algorithms">
+                            <div class="skill-info">
+                                <span class="skill-name">C</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Java" data-level="80" data-desc="Object-oriented development">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Python" data-level="75" data-desc="Data analysis & automation">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="web">
+                    <div class="category-header">
+                        <div class="category-icon web-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                        <div class="category-pattern"></div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="HTML" data-level="90" data-desc="Semantic markup & accessibility">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="CSS" data-level="85" data-desc="Modern styling & animations">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript" data-level="80" data-desc="Interactive web applications">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="database">
+                    <div class="category-header">
+                        <div class="category-icon database-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database</h3>
+                        <div class="category-pattern"></div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="SQL" data-level="85" data-desc="Complex queries & optimization">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Database Design" data-level="75" data-desc="Normalized schema design">
+                            <div class="skill-info">
+                                <span class="skill-name">Database Design</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Query Optimization" data-level="70" data-desc="Performance tuning">
+                            <div class="skill-info">
+                                <span class="skill-name">Query Optimization</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="tools">
+                    <div class="category-header">
+                        <div class="category-icon tools-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Tools & Platforms</h3>
+                        <div class="category-pattern"></div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-skill="Git" data-level="80" data-desc="Version control & collaboration">
+                            <div class="skill-info">
+                               
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="GitHub" data-level="85" data-desc="Project management & CI/CD">
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="VS Code" data-level="90" data-desc="Efficient development workflow">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="core-strengths">
+                <h3 class="strengths-title">Core Strengths</h3>
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <div class="strength-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Problem Solving</h4>
+                        <p>120+ GeeksforGeeks problems solved</p>
+                    </div>
+                    <div class="strength-item">
+                        <div class="strength-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Quick Learning</h4>
+                        <p>Rapidly adapts to new technologies</p>
+                    </div>
+                    <div class="strength-item">
+                        <div class="strength-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>Creative solutions to complex problems</p>
+                    </div>
+                    <div class="strength-item">
+                        <div class="strength-icon">
+                          <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Goal-Oriented</h4>
+                        <p>Focused on achieving objectives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title1">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing innovative solutions and creative implementations across various technologies</p>
+            
+            <div class="projects-grid">
+                
+                
+                <div class="project-card" data-project="travel-journal">
+                    <div class="project-image">
+                        <img src="./images/travejt.png" alt="Travel Journal Timeline">
+                        <div class="project-overlay"></div>
+                        <div class="project-year">2025</div>
+                        <div class="project-status">Completed</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Travel Journal Timeline
+                            <i class="fas fa-calendar-alt"></i>
+                        </h3>
+                        <p class="project-description">
+                            Created a visually engaging travel journal timeline web page using HTML and CSS, showcasing locations and memories in chronological order. Implemented caption editing functionality with JavaScript to allow interactive updates.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat"><i class="fas fa-star"></i> 15</span>
+                
+                            <span class="stat"><i class="fas fa-eye"></i> 120</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Interactive Timeline</li>
+                                <li>Caption Editing</li>
+                                <li>Responsive Design</li>
+                                <li>Memory Showcase</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KSriMounika/Travel-Journal-Timeline" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github" ></i> Code
+                            </a>
+                            <a href="https://ksrimounika.github.io/Travel-Journal-Timeline/" target="_blank" class="btn btn-p1">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="portfolio">
+                    <div class="project-status live">Live</div>
+                    <div class="project-image">
+                        <img src="./images/port1.webp" alt="Portfolio Website">
+                        <div class="project-overlay"></div>
+                        <div class="project-year">2025</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Portfolio Website
+                            <i class="fas fa-calendar-alt"></i>
+                        </h3>
+                        <p class="project-description">
+                            A modern, responsive portfolio website built with html , CSS and javascript, featuring smooth animations and an elegant design to showcase projects and skills.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                           
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat"><i class="fas fa-star"></i> 25</span>
+                        
+                            <span class="stat"><i class="fas fa-eye"></i> 200</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Responsive Design</li>
+                                <li>Smooth Animations</li>
+                                <li>Dark Mode</li>
+                               
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KSriMounika/KeerthiPortfolio" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://ksrimounika.github.io/KeerthiPortfolio/" target="_blank" class="btn btn-p1">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="Tech Pulse">
+                    <div class="project-status progress">In Progress</div>
+                    <div class="project-image">
+                        <img src="./images/techpulse.jpeg" alt="Tech Pulse">
+                        <div class="project-overlay"></div>
+                        <div class="project-year">2025</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                           Tech Pulse
+                            <i class="fas fa-calendar-alt"></i>
+                        </h3>
+                        <p class="project-description">
+                           Tech Pulse is a centralized platform designed for tech learners and professionals to grow, collaborate, and succeed. Whether you're learning new skills, building real-world projects, or coordinating with your team-Tech Pulse brings everything under one roof.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag"> CSS</span>
+                            <span class="tag">JavaScript</span>
+                           
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat"><i class="fas fa-star"></i> 32</span>
+                          
+                            <span class="stat"><i class="fas fa-eye"></i> 350</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                               
+                                <li>Learning Path</li>
+                                 <li>Projects</li>
+                                <li>Resume Builder</li>
+                                <li>Internships</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/divya1829/Techpulse_Final" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://player.cloudinary.com/embed/?cloud_name=dm7wamfnf&public_id=Screen_Recording_2025-09-10_222124_1_zg5kgo&profile=cld-default" target="_blank" class="btn btn-p1">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects-cta">
+                <p>Want to see more of my work?</p>
+                <a href="https://github.com/KSriMounika" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Awards</h2>
+            <p class="section-subtitle" style="color:lab(38.93% 33.84 -44.68) ;">Recognition of dedication, skill development, and continuous learning journey</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-value">10+</div>
+                    <div class="stat-label">Courses Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="stat-value">3+</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-value">5+</div>
+                    <div class="stat-label">Collaborations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="stat-value">8+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <div class="achievement-badge">HackerRank Certified</div>
+                    <h3>SQL Certifications</h3>
+                    <p>Achieved SQL (Basic) and SQL (Intermediate) certifications from HackerRank</p>
+                    <div class="achievement-details">
+                        <p>Demonstrated proficiency in complex queries, joins, and database optimization</p>
+                        <div class="achievement-metric">2 Certifications</div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <div class="achievement-badge">120+ Problems</div>
+                    <h3>Problem Solving</h3>
+                    <p>Solved 120+ problems on GeeksforGeeks, improving algorithmic thinking</p>
+                    <div class="achievement-details">
+                        <p>Mastered data structures, algorithms, and competitive programming concepts</p>
+                        <div class="achievement-metric">120+ Solutions</div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <div class="achievement-badge">Multi-Language</div>
+                    <h3>Programming Excellence</h3>
+                    <p>Demonstrated strong programming skills across multiple languages</p>
+                    <div class="achievement-details">
+                        <p>Proficient in C, Java, Python, JavaScript with practical project experience</p>
+                        <div class="achievement-metric">4+ Languages</div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-bullseye"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <div class="achievement-badge">Always Growing</div>
+                    <h3>Continuous Learning</h3>
+                    <p>Actively pursuing knowledge in full-stack development technologies</p>
+                    <div class="achievement-details">
+                        <p>Constantly updating skills with latest frameworks and best practices</p>
+                        <div class="achievement-metric">6+ Certifications</div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <p class="cert-issuer">Cisco Networking Academy (NetAcad)</p>
+                    <p class="cert-description">Comprehensive certification covering C programming fundamentals and advanced concepts</p>
+                    <div class="cert-progress"></div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Python Essentials</h3>
+                    <p class="cert-issuer">Cisco Networking Academy (NetAcad)</p>
+                    <p class="cert-description">Python programming certification covering core concepts and practical applications</p>
+                    <div class="cert-progress"></div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>HTML and CSS</h3>
+                    <p class="cert-issuer">Certiport IT Pearson</p>
+                    <p class="cert-description">Web development certification demonstrating proficiency in HTML and CSS</p>
+                    <div class="cert-progress"></div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Database Management System</h3>
+                    <p class="cert-issuer">NPTEL</p>
+                    <p class="cert-description">Comprehensive course on database design, implementation, and management</p>
+                    <div class="cert-progress"></div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Java Foundations</h3>
+                    <p class="cert-issuer">Oracle Academy</p>
+                    <p class="cert-description">Java programming certification covering object-oriented programming concepts</p>
+                    <div class="cert-progress"></div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>SQL (Basic & Intermediate)</h3>
+                    <p class="cert-issuer">HackerRank</p>
+                    <p class="cert-description">Database querying skills certification with practical problem-solving</p>
+                    <div class="cert-progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title2" >Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about technology. Feel free to reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>keerthisrimounika@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9398749761</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <div class="form-error" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <div class="form-error" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <div class="form-error" id="messageError"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="btn-text">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/KSriMounika" target="_blank" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sri-mounika-keerthi-72aa84290/" target="_blank" class="footer-social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:keerthisrimounika@gmail.com" class="footer-social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919398749761" class="footer-social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-text">
+                    <p>Made with <i class="fas fa-heart"></i> by Sri Mounika Keerthi</p>
+                    <p>&copy;All rights reserved 2025.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+  const navToggle = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    navToggle.classList.toggle("active");
+  });
+
+  // Close menu when a link is clicked
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      navToggle.classList.remove("active");
+    });
+  });
+</script>
+</body>
+</html>
